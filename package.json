@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "dev": "tailwindcss -i src/styles/main.css -o dist/styles/main.css --watch",
+        "build": "node tools/build.js",
+        "deploy": "npm run build && node tools/deploy.js"
+    },
+    "devDependencies": {
+        "basic-ftp": "^5.0.5",
+        "dotenv": "^16.5.0"
+    }
+}
